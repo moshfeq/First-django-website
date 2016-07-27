@@ -4,37 +4,37 @@
 	
 	$(document).ready(function(){ /*-----to get the document ready----*/	
 
-         $("a#6").click(function() {
+         $("a#6").click(function() {  /*-----for scrolling to different sections----*/
          $('html, body').animate({
              scrollTop: $("#contact").offset().top
            }, 500);
          });
 
-         $("a#1").click(function() {
+         $("a#1").click(function() { /*-----for scrolling to different sections----*/
          $('html, body').animate({
              scrollTop: $("body").offset().top
            }, 500);
          });
 		 
-         $("a#2").click(function() {
+         $("a#2").click(function() { /*-----for scrolling to different sections----*/
          $('html, body').animate({
              scrollTop: $("#about_home").offset().top
            }, 500);
          });
 		 
-         $("a#3").click(function() {
+         $("a#3").click(function() { /*-----for scrolling to different sections----*/
          $('html, body').animate({
              scrollTop: $("#gallery_home").offset().top
            }, 500);
          });
 		 
-         $("a#4").click(function() {
+         $("a#5").click(function() { /*-----for scrolling to different sections----*/
          $('html, body').animate({
              scrollTop: $("#services").offset().top
            }, 500);
          });
 		 
-         $("a#5").click(function() {
+         $("a#4").click(function() { /*-----for scrolling to different sections----*/
          $('html, body').animate({
              scrollTop: $("#blog").offset().top
            }, 500);

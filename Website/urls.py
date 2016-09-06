@@ -21,3 +21,4 @@ urlpatterns = [
     url(r'^', include('homepage.urls')),
     url(r'^blog/', include('blog.urls')),
 ]
+

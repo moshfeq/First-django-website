@@ -3,6 +3,7 @@ This is my first django project. To view the website, go here : [Ishan Subedi](h
 #Requirements :
 
 To run this website locally in your computer you will need to install the following :
+
 1. Python 2 or 3
 2. Django 1.9
 

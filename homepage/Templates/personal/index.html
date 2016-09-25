@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 
-<html>
-<!---------Load Jquery and javascript----------->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+
+<!-- Load Jquery and javascript- -->
 <script src="/static/jquery-list.js"></script>
 <script src="/static/javascript.js"></script>
-<!---------head----------->
+
+<!-- head -->
 <head>
+<meta property="og:image" content="/static/img/preview.jpg" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Ishan Subedi </title>
 <link rel="stylesheet" type="text/css" href="/static/index.css">
@@ -14,28 +19,31 @@
 <link rel="shortcut icon" type="image/x-icon" href="/static/img/icon.png" />
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </head>
-<!---------head ends----------->
+<!--head ends-->
 
 <body>
 
+<img class="loading_image" src="/static/img/loading.gif">
 
+<div id="body_wrapper">
 
-<!--------responsive menu------------>
+<!--responsive menu-->
 <div id="res_menu">
 <div id="res_menu_label">
 <div id="line"></div><div id="line"></div><div id="line"></div>
 </div>
 </div>
-<!---------Normal Menu----------->
+
+<!---Normal Menu-->
 <div id="menu2"></div>
 <div id="menu">
-<img class="logo" src="/static/img/logo.gif">
+<a href="/"> <img class="logo" src="/static/img/logo.gif"> </a>
 <div id="menu_tabs">
 <a id="1"><p class="menu"> HOME </p></a>
 <a id="2"><p class="menu"> ABOUT </p></a>
 <a id="3"><p class="menu"> GALLERY </p></a>
-<a id="4"><p class="menu"> BLOG </p></a>
 <a id="5"><p class="menu"> SERVICES </p></a>
+<a href="/blog"><p class="menu"> BLOG </p></a>
 <a id="6"><p class="menu"> CONTACT </p></a>
 
 </div>
@@ -43,7 +51,7 @@
 
 
 
-<!---------header section----------->
+<!---------header section-->
 <div id="header">
 <div id="coverText">
 <h1 class="header_head"> Ishan Subedi</h1>
@@ -53,15 +61,15 @@
 
 
 
-<!---------main content starts from here----------->
+<!---------main content starts from here-->
 <div id="content">
 
 
 
-<!--------About Me section------------>
+<!--------About Me section-->
 <div id="about_home">
 <h1 class="header1">About Me</h1>
-<p class="paragraph">Hello there! This is Ishan Subedi. A passionate graphic and web designer based in Kathmandu. Have been converting simple pixels into beautiful designs for more than two years. Are you are looking for cool graphic and web designs ? Well, you have come to the right place. </p>
+<p class="paragraph">Hello there! This is Ishan Subedi. A passionate Full-Stack web developer with passion for Front-End. Have been converting simple pixels into beautiful designs for more than four years. If you are looking for cool websites and graphic designs then well, you have come to the right place. </p>
 <!--------Personal Stuffs section------------>
 <div id="about2">
 <h1 class="header1">Personal Stuffs</h1>
@@ -75,14 +83,11 @@
 <img class="personal" src="/static/img/12.jpg">
 <img class="personal" src="/static/img/10.jpg">
 </div>
-<p class="paragraph"> I am a crazy fan of football. I never miss a single match of my National Football Team and support Manchester United FC in club level football. I had passion for painting since my early childhood but these days, after I learnt graphic designing, I prefer digital painting over hand drawn paintings. You can have a look at some of them in my gallery. During long vacations, I enjoy travelling, far from noisy cities where you could find silence and nature at its best. Hiking around the mountains could be a good idea.</p></p>
+<p class="paragraph"> I am a crazy fan of football. I never miss a single match of my National Football Team and support Manchester United FC in club level football. I had passion for painting since my early childhood but these days, after I learnt graphic designing, I prefer digital painting over hand drawn paintings. Nevertheless I still love sketching. You can have a look at some of them in my gallery. During long vacations, I enjoy travelling, far from noisy cities where we could find silence and nature at its best. Hiking around the mountains could be a good idea.</p></p>
 <div id="button"><a href="#about_home" id="a2"><text class="buttonDefault"> READ LESS</text></a></div>
 </div>
 <div id="button"><a id="a1"><text class="buttonDefault"> READ ON</text></a></div>
 </div>
-
-
-
 
 
 <!-------gallery section------------->
@@ -99,7 +104,7 @@
 </h1>
 <img class="image" src="/static/img/ball_game.jpg">
 </div>
-<!---------Second smaller section----------->
+<!---------Second smaller section-->
 <div id="gallery_home2">
 <h1 class="image_hover2"> 
 <span class="gallery_head"> Logo Design</span> <br>
@@ -107,7 +112,7 @@
 </h1>
 <img class="image" src="/static/img/1.jpg">
 </div>
-<!---------Third smaller section----------->
+<!---------Third smaller section-->
 <div id="gallery_home3" style="margin-top:-5px">
 <h1 class="image_hover3"> 
 <span class="gallery_head"> Logo Design</span> <br>
@@ -115,9 +120,9 @@
 </h1>
 <img class="image" src="/static/img/NP.jpg">
 </div>
-<!---------More Gallery Section----------->
+<!---------More Gallery Section-->
 <div id="gallery2">
-<!---------1st section of more gallery----------->
+<!---------1st section of more gallery-->
 <div id="gallery_home4" style="margin-top:-5px">
 <h1 class="image_hover4"> 
 <span class="gallery_head"> Digital Painting</span> <br>
@@ -125,7 +130,7 @@
 </h1>
 <img class="image" src="/static/img/f.jpg">
 </div>
-<!---------1st section of more gallery----------->
+<!---------1st section of more gallery-->
 <div id="gallery_home5" style="margin-top:-5px">
 <h1 class="image_hover5"> 
 <span class="gallery_head"> Digital Painting</span> <br>
@@ -133,7 +138,7 @@
 </h1>
 <img class="image" src="/static/img/DP1.jpg">
 </div>
-<!---------1st section of more gallery----------->
+<!---------1st section of more gallery-->
 <div id="gallery_home6" style="margin-top:-5px">
 <h1 class="image_hover6"> 
 <span class="gallery_head"> Graphic Design</span> <br>
@@ -151,8 +156,6 @@
 
 
 
-
-
 <!--------My service section------------>
 <div id="services">
 <h1 class="header1">My Services</h1>
@@ -161,19 +164,19 @@
 <div class="services_items">
 <img class="services" src="/static/img/web_design_icon.png">
 <h2 class="services"> Web Design </h2>
-<p class="services_p"> I have over 4 years of experience as a web designer. I have awesome Javascript/Django skills and a really good ability to communicate my ideas.  </p>
+<p class="services_p"> I have over 3 years of experience as a web developer. I have awesome Javascript/Django skills and a really good ability to communicate my ideas.  </p>
 </div>
 <!--------Middle section------------>
 <div class="services_items" id="middle">
 <img  class="services" src="/static/img/logo_design_icon.png">
 <h2 class="services"> Logo Design </h2>
-<p class="services_p"> Desiging logos and decorating texts/Typography is one of my passions. I love using my creative power to make great ideas. </p>
+<p class="services_p"> Desiging logos and decorating texts/Typography is one of my passions. I love using my creative ideas to make eyecatching designs. </p>
 </div> 
 <!------Last Section-------------->
 <div class="services_items">
 <img class="services" src="/static/img/graphic_design_icon.png">
 <h2 class="services"> Graphic Design </h2>
-<p class="services_p"> I am really good at converting simple pixels into beautiful designs. I am sure you will love my photoshop skills.    </p>
+<p class="services_p"> I am really good at converting simple pixels into beautiful designs. I am sure you will love my Photoshop/GIMP skills. </p>
 </div> 
 <!----------Hire Me button---------->
 </div>
@@ -181,7 +184,7 @@
 </div>
 
 
-<!---------------Blog section------------->
+<!---------------Blog section-->
 <div id="blog">
 <h1 class="header1" style="margin-bottom:30px;"> Latest Blog Posts </h1>
 {% for post in object_list %}
@@ -199,35 +202,22 @@
 
 
 
-<!---------Contact Section----------->
-<div id="contact">
-<h1 class="header1">Contact Me</h1>
-<p class="services_p" style="font-size:17px;padding:0px 20px;"> Want to say a friendly hello ? Go ahead and fill the form below. </p>
-<div id="contact_wrapper">
-<!---------form block----------->
-<form action="index.php" method="post">
-<input type="text" placeholder="NAME"><br>
-<input type="text" placeholder="E-MAIL"><br>
-<input class="message_box" type="text" placeholder="MESSAGE">
-</form>
-</div>
-<div id="button"><a href="#contact"><text class="buttonDefault"> SEND MESSAGE</text></a></div>
-</div>
+<!---------Contact Section-->
 
+{% include 'personal/contactform_form.html' %}
 
-
-
-
-<!--------footer section------------>
-<div id="footer">
+<!--------footer section-->
+<div id="footer" style="margin-top:0px">
 <div id="footer_icons">
-<a href="https://www.facebook.com/ishan.subedi.5"><img class="footer_icons" src="/static/img/fb.gif"></a>
-<a href="https://twitter.com/ikushum"><img class="footer_icons" src="/static/img/twitter.gif"></a>
-<a href="https://instagram.com/ishan_kushum"><img class="footer_icons" src="/static/img/insta.gif"></a>
+<a target="_blank" href="https://www.facebook.com/ishan.subedi.5"><img class="footer_icons" src="/static/img/fb.gif"></a>
+<a target="_blank"  href="https://twitter.com/ikushum"><img class="footer_icons" src="/static/img/twitter.gif"></a>
+<a target="_blank" href="https://instagram.com/ishan_kushum"><img class="footer_icons" src="/static/img/insta.gif"></a>
+<a target="_blank" href="https://github.com/ikushum"><img class="footer_icons" src="/static/img/github.gif"></a>
 </div>
 <text class="footer"> &#169 2016 Ishan Subedi  </text>
 <text class="footer"> All rights reserved </text>
 <text class="footer"> Further details: ikushum@gmail.com </text>
+</div>
 </div>
 </div>
 

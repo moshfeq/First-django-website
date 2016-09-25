@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <html>
-<!---------Load Jquery and javascript----------->
+<!---------Load Jquery and javascript---------->
 <script src="/static/jquery-list.js"></script>
 <script src="/static/javascript.js"></script>
-<!---------head----------->
+<!---------head---------->
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Ishan Subedi </title>
@@ -14,32 +14,35 @@
 <link rel="shortcut icon" type="image/x-icon" href="/static/img/icon.png" />
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </head>
-<!---------head ends----------->
+<!---------head ends---------->
 
 <body>
 
+<img class="loading_image" src="/static/img/loading.gif">
+
+<div id="body_wrapper">
 <!--------responsive menu------------>
 <div id="res_menu">
 <div id="res_menu_label">
 <div id="line"></div><div id="line"></div><div id="line"></div>
 </div>
 </div>
-<!---------Normal Menu----------->
+<!---------Normal Menu---------->
 <div id="menu2"></div>
 <div id="menu">
-<img class="logo" src="/static/img/logo.gif">
+<a href="/"><img class="logo" src="/static/img/logo.gif"></a>
 <div id="menu_tabs">
 <a href="/"><p class="menu"> HOME </p></a>
 <a href="/#about_home"><p class="menu"> ABOUT </p></a>
 <a href="/#gallery_home"><p class="menu"> GALLERY </p></a>
-<a href="/blog"><p class="menu"> BLOG </p></a>
 <a href="/#services"><p class="menu"> SERVICES </p></a>
+<a href="/blog"><p class="menu"> BLOG </p></a>
 <a href="/#contact"><p class="menu"> CONTACT </p></a>
 
 </div>
 </div>
 
-<!---------header section----------->
+<!---------header section---------->
 <div id="header" style="position:absolute;z-index:-10;height:100%;">
 <div id="coverText">
 <h1 class="header_head_post"> {{ post.title }}</h1>
@@ -50,22 +53,25 @@
 <div id="content" style="top:80%;">
 
 <div id="post">
-<h5 class="date_time post_date_time"> posted on {{ post.date }}</h6><br>
-<h3 class="post_body">{{ post.body|safe|linebreaks}}</h3>
 <div id="img_indivisual">{{ post.PostImage|safe }}</div>
+<h5 class="date_time post_date_time"> posted on {{ post.date }} by Ishan Subedi</h6><br>
+<h3 class="post_body">{{ post.body|safe|linebreaks}}</h3>
 
 </div>
 
 <!--------footer section------------>
 <div id="footer">
 <div id="footer_icons">
-<a href="https://www.facebook.com/ishan.subedi.5"><img class="footer_icons" src="/static/img/fb.gif"></a>
-<a href="https://twitter.com/ikushum"><img class="footer_icons" src="/static/img/twitter.gif"></a>
-<a href="https://instagram.com/ishan_kushum"><img class="footer_icons" src="/static/img/insta.gif"></a>
+<a target="_blank" href="https://www.facebook.com/ishan.subedi.5"><img class="footer_icons" src="/static/img/fb.gif"></a>
+<a target="_blank"  href="https://twitter.com/ikushum"><img class="footer_icons" src="/static/img/twitter.gif"></a>
+<a target="_blank" href="https://instagram.com/ishan_kushum"><img class="footer_icons" src="/static/img/insta.gif"></a>
+<a target="_blank" href="https://github.com/ikushum"><img class="footer_icons" src="/static/img/github.gif"></a>
+
 </div>
 <text class="footer"> &#169 2016 Ishan Subedi  </text>
 <text class="footer"> All rights reserved </text>
 <text class="footer"> Further details: ikushum@gmail.com </text>
 </div>
 
+</div>
 </div>

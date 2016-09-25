@@ -1,0 +1,18 @@
+
+<div id="contact">
+<h1 class="header1">Contact Me</h1>
+<p class="services_p" style="font-size:17px;padding:0px 20px;"> Want to say a friendly hello or hire me ? Go ahead and fill the form below. </p>
+<div id="contact_wrapper">
+<form action="#contact" method="post">
+   {% for field in form %}
+   {% csrf_token %}
+    <div class="input_error_message"> <span class="error_message"> {{ field.errors }}</span></div>
+    <div class="input"> {{ field}}  </div>
+   {% endfor %}
+    <div id="button">
+        <input id="submit" class="submit_button" type="submit" value="SEND MESSAGE" />
+    </div>
+</form>
+</div>
+</div>
+

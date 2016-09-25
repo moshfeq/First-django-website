@@ -1,7 +1,12 @@
-To run it locally:
-1) In settings.py make Debug=True and set Host={}
-2) In wsgi.py put everything that deals with whitenoise in comment
+#Requirements :
 
-To deploy it for production:
-1) In settings.py make Debug=False and set Host={"*"}
-2) In wsgi.py un-comment everything that deals with whitenoise 
+To run this website locally in your computer you will need to install the following :
+1. Python 2 or 3
+2. Django 1.9
+
+#Installation and Running
+
+* `git clone <repository-url>` this repository
+* change into the new directory
+* Run the command > python manage.py runserver
+* Open your web browser and enter the adress of your local server (usually its http://127.0.0.1:8000 )
